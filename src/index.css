@@ -1,1 +1,48 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+@theme {
+  --font-primary: "Quicksand", sans-serif;
+
+  --shadow-bold: 1px 2px 6px 4px #35394433;
+  --shadow-medium: 0 15px 25px #00000014;
+  --shadow-light: 0 3px 10px #00000014;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-gray-100: #f2f2f2;
+  --color-gray-200: #f1f1f1;
+  --color-gray-300: #eaeaea;
+  --color-gray-400: #dddddd;
+  --color-gray-450: #bfbfbf;
+  --color-gray-500: #a8a8a8;
+  --color-gray-600: #979797;
+  --color-gray-650: #868686;
+  --color-gray-700: #83868c;
+  --color-gray-800: #666666;
+
+  --color-pink-dark: #e62263;
+  --color-red-dark: #e12c43;
+  --color-green-500: #28af5b;
+  --color-red-500: #f55;
+}
+
+@layer base {
+  html,
+  body {
+    @apply font-primary;
+  }
+  h1 {
+    @apply text-2xl font-semibold mt-1.5 mb-5 md:text-[20px] lg:text-2xl;
+  }
+  h3 {
+    @apply text-base uppercase font-medium md:text-[14px] lg:text-base;
+  }
+}
+
+@layer components {
+  .wrapper {
+    @apply max-w-[1440px] mx-auto px-[15px];
+  }
+}
