@@ -5,8 +5,10 @@ import { Banner } from "../components/common/Banner";
 import { Slideshow } from "../components/common/Slideshow";
 import { TitleSection } from "../components/common/TitleSection";
 import { TitleWidget } from "../components/common/TitleWidget";
+import { ProductCart } from "../components/products/ProductCart";
 import { ProductHorizontal } from "../components/products/ProductHorizontal";
 import { ProductItem } from "../components/products/ProductItem";
+import { ProductWishlist } from "../components/products/ProductWishlist";
 import {
   IMG_BANNER1,
   IMG_BLOG1,
@@ -59,7 +61,7 @@ function HomePage() {
       ></Slideshow> */}
       {/* <TitleSection>BEST SELLER</TitleSection> */}
       {/* <TitleWidget>Featured Products</TitleWidget> */}
-      <TitleBlog
+      {/* <TitleBlog
         img={IMG_BLOG1}
         day={"23"}
         month={"August"}
@@ -67,7 +69,17 @@ function HomePage() {
         title={"Where Do Tulips Come From?"}
         commentCount={"0"}
         author={"Phan Thuý"}
-      ></TitleBlog>
+      ></TitleBlog> */}
+      {/* <ProductWishlist
+        img={IMG_PRODUCT1}
+        name={"Angel Centerpiece"}
+        price={"$34.00"}
+      ></ProductWishlist> */}
+      <ProductCart
+        img={IMG_PRODUCT1}
+        name={"Baby First Block"}
+        price={"$138.00"}
+      ></ProductCart>
     </div>
   );
 }
