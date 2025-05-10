@@ -57,6 +57,12 @@ const buttonStyles = tv({
       true: "!p-0",
     },
   },
+  compoundVariants: [
+    {
+      shape: "circle",
+      className: "!p-0 w-10 h-10",
+    },
+  ],
 });
 
 export { Button };
