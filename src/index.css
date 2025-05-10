@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import "tailwindcss";
 
 @theme {
   --font-primary: "Quicksand", sans-serif;
@@ -34,7 +34,7 @@
     @apply font-primary;
   }
   h1 {
-    @apply text-2xl font-semibold mt-1.5 mb-5 md:text-[20px] lg:text-2xl;
+    @apply text-2xl font-semibold mt-1.5 md:text-[20px] lg:text-2xl;
   }
   h3 {
     @apply text-base uppercase font-medium md:text-[14px] lg:text-base;
