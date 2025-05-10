@@ -21,7 +21,7 @@ function SingleInput({
         required
         className="w-full px-6 leading-[1.5] outline-none"
       />
-      <Button variant="third" size={size}>
+      <Button variant={isRed ? "third" : "primary"} size={size}>
         {children}
       </Button>
     </div>
