@@ -1,7 +1,7 @@
 import { IoBagOutline, IoHeartOutline } from "react-icons/io5";
 import { Link } from "react-router";
 
-function ProductItem({ img, salePercent, name, priceOld, price }) {
+function ProductItem({ img, salePercent, name, originalPrice, price }) {
   return (
     <div className="overflow-hidden mb-8 w-full hover:shadow-medium group">
       <div className="relative">
@@ -30,7 +30,7 @@ function ProductItem({ img, salePercent, name, priceOld, price }) {
         </Link>
         <div className="flex justify-center items-center gap-2 pb-6">
           <span className="text-[15px] text-gray-600 font-bold line-through">
-            {priceOld}
+            {originalPrice}
           </span>
           <p className="text-[15px] text-pink-dark font-bold">{price}</p>
         </div>

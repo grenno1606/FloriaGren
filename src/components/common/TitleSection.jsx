@@ -10,7 +10,7 @@ function TitleSection({ children, className }) {
         )}
       >
         {children}
-        <span className="absolute w-1/2 h-0.5 bg-pink-dark left-1/2 -translate-x-1/2 bottom-0"></span>
+        <span className="absolute w-1/2 h-0.5 bg-pink-dark left-1/2 -translate-x-1/2 bottom-0" />
       </div>
     </div>
   );

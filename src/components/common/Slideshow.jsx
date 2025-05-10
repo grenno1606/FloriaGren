@@ -2,14 +2,13 @@ import { twMerge } from "tailwind-merge";
 import { Button } from "../buttons/Button";
 function Slideshow({
   image,
-  title_small,
-  title_big,
+  titleSmall,
+  titleBig,
   description,
   className,
-  classNameTTSmall,
-  classNameTTBig,
-  classNameDescription,
-  classNameButton,
+  effect1 = false,
+  effect2 = false,
+  effect3 = false,
 }) {
   return (
     <div className="relative h-[450px] md:h-[500px] lg:h-[580px] xl:h-[700px] 2xl:h-[1000px]">
@@ -27,28 +26,42 @@ function Slideshow({
         <p
           className={twMerge(
             "uppercase text-lg font-semibold lg:font-bold pb-4 tracking-[5px] transition",
-            classNameTTSmall
+            effect1 && "leftToRight",
+            effect2 && "downToUp",
+            effect3 && "upToDown"
           )}
         >
-          {title_small}
+          {titleSmall}
         </p>
         <p
           className={twMerge(
             "text-3xl font-medium pb-[15px] sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-[100px] transition",
-            classNameTTBig
+            effect1 && "flip",
+            effect2 && "downToUp",
+            effect3 && "scale"
           )}
         >
-          {title_big}
+          {titleBig}
         </p>
         <p
           className={twMerge(
             "text-[19px] font-semibold pb-[15px] sm:text-2xl mb-7 md:text-2xl transition",
-            classNameDescription
+            effect1 && "rightToLeft",
+            effect2 && "downToUp",
+            effect3 && "leftToRight"
           )}
         >
           {description}
         </p>
-        <Button className={classNameButton}>SHOP NOW</Button>
+        <Button
+          className={twMerge(
+            effect1 && "scaleAndMove",
+            effect2 && "downToUp",
+            effect3 && "rightToLeft"
+          )}
+        >
+          SHOP NOW
+        </Button>
       </div>
     </div>
   );
