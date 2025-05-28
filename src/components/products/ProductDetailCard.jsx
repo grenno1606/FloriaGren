@@ -59,13 +59,13 @@ function ProductDetailCard({
         </div>
         <div className="flex items-center justify-start mt-4">
           <div className="pr-1.5 text-[15px]">Categories :</div>
-          <Button variant="ghost" className={"text-gray-450 mr-2.5"}>
+          <Button variant="ghost" className="text-gray-450 mr-2.5">
             Best Seller,
           </Button>
-          <Button variant="ghost" className={"text-gray-450 mr-2.5"}>
+          <Button variant="ghost" className="text-gray-450 mr-2.5">
             Best Seller,
           </Button>
-          <Button variant="ghost" className={"text-gray-450 mr-2.5"}>
+          <Button variant="ghost" className="text-gray-450 mr-2.5">
             Best Seller
           </Button>
         </div>
