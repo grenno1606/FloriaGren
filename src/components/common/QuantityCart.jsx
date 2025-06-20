@@ -21,13 +21,13 @@ function QuantityCart() {
       <div className="flex items-center justify-center flex-col">
         <button
           onClick={incQuantity}
-          className="text-xl h-1/2 px-2.5 border-b border-b-gray-400 cursor-pointer"
+          className="text-xl h-1/2 px-2.5 border-b border-b-gray-400 cursor-pointer hover:text-pink-dark"
         >
           <IoMdArrowDropup />
         </button>
         <button
           onClick={decQuantity}
-          className="text-xl h-1/2 px-2.5 cursor-pointer"
+          className="text-xl h-1/2 px-2.5 cursor-pointer hover:text-pink-dark"
         >
           <IoMdArrowDropdown />
         </button>

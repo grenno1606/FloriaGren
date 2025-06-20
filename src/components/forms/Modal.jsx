@@ -8,7 +8,7 @@ function Modal({ isOpen, onClose, children }) {
   return (
     <div
       className={twMerge(
-        "fixed top-0 left-0 right-0 bottom-0 z-50 bg-black/30 justify-center items-center hidden",
+        "fixed top-0 left-0 right-0 bottom-0 z-50 bg-black/50 justify-center items-center hidden",
         isOpen && "flex"
       )}
     >
