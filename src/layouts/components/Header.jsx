@@ -126,14 +126,19 @@ function Header() {
               <img width={100} height={25} src={IMG_LOGO} alt="image logo" />
             </Link>
             <div className="ml-auto flex items-center gap-4 *:cursor-pointer">
-              <Button icon={true} variant="ghost" size="lg">
+              <Button
+                icon={true}
+                variant="ghost"
+                size="lg"
+                className="hover:text-black"
+              >
                 <IoSearchOutline />
               </Button>
               <Button
                 icon={true}
                 variant="ghost"
                 size="lg"
-                className="hidden xl:block"
+                className="hidden xl:block hover:text-black"
                 onClick={showLoginForm}
               >
                 <IoPersonOutline />
@@ -143,14 +148,19 @@ function Header() {
                   icon={true}
                   variant="ghost"
                   size="lg"
-                  className="hidden xl:block"
+                  className="hidden xl:block hover:text-black"
                 >
                   <IoHeartOutline />
                 </Button>
               </Link>
               <Link to="cart">
                 <div className="relative">
-                  <Button icon={true} variant="ghost" size="lg">
+                  <Button
+                    icon={true}
+                    variant="ghost"
+                    size="lg"
+                    className="hover:text-black"
+                  >
                     <IoBagOutline />
                   </Button>
                   <span className="absolute -top-2.5 -right-1 text-[14px] text-pink-dark font-semibold">

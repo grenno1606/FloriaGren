@@ -1,6 +1,6 @@
-import { GoXCircleFill } from "react-icons/go";
-import { QuantityCart } from "../common/QuantityCart";
 import { Link } from "react-router";
+import { QuantityCart } from "../common/QuantityCart";
+import { GoXCircleFill } from "react-icons/go";
 
 function ProductCart({ img, name, price }) {
   return (
@@ -9,10 +9,10 @@ function ProductCart({ img, name, price }) {
         <li className="text-xs text-black md:hidden">Product Name</li>
         <li className="flex gap-5 flex-col items-end md:w-full md:flex-row md:items-center">
           <Link to={""}>
-            <img className="w-24 h-24" src={img} alt="img_product" />
+            <img className="w-24 h-24" src={img} alt="image product" />
           </Link>
           <Link
-            to={""}
+            to=""
             className="text-[14px] text-black cursor-pointer hover:text-pink-dark"
           >
             {name}
@@ -40,7 +40,7 @@ function ProductCart({ img, name, price }) {
       <ul className="flex justify-between md:w-1/12 md:items-center">
         <li className="text-xs text-black md:hidden">Remove</li>
         <li className="md:w-full md:flex md:justify-center">
-          <GoXCircleFill className="cursor-pointer" />
+          <GoXCircleFill className="cursor-pointer hover:text-pink-dark" />
         </li>
       </ul>
     </div>

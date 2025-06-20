@@ -19,7 +19,7 @@ function ProductDesc({ img, title, description, reverse = false }) {
         </p>
         <Button
           variant="ghost"
-          className="font-bold text-black border-b-2 border-b-black text-[14px]"
+          className="font-bold text-black border-b-2 border-b-black text-[14px] hover:text-pink-dark hover:border-b-pink-dark"
         >
           Buy now
         </Button>
